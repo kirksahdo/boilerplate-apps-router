@@ -15,7 +15,10 @@ export default defineConfig([
   {
 
     rules: {
-    "react/react-in-jsx-scope": "off"
+      "react/react-in-jsx-scope": "off",
+      "react-hooks/exhaustive-deps": "warn",
+      "react/prop-types": "off",
+      "@typescript-eslint/explicit-module-boundary-types": "off"
     },
   }
 ]);
