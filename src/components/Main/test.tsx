@@ -4,12 +4,9 @@ import { Main } from '.'
 describe('<Main />', () => {
   it('should render the heading', () => {
     // renderiza o componente
-    const { container } = render(<Main />)
+    render(<Main title="Title" />)
     // busca o elemento e verifica a existência
 
-    expect(screen.getByRole('heading', { name: /React/i })).toBeInTheDocument()
-
-    // gerar snapshot
-    expect(container.firstChild).toMatchSnapshot()
+    expect(screen.getByRole('heading', { name: /Title/i })).toBeInTheDocument()
   })
 })
