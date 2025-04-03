@@ -1,36 +1,105 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Boilerplate Apps Router
 
-## Getting Started
+This is a boilerplate repository for a Next.js application. It includes various configurations for linting, testing, styling, and component documentation.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Next.js 15**: Latest version of Next.js with App Router support.
+- **React 19**: Utilizes the latest React version for enhanced performance and features.
+- **TypeScript**: Type safety for better maintainability.
+- **ESLint & Prettier**: Linting and formatting to ensure code consistency.
+- **React Component Test**: Configured for unit and integration testing.
+- **Storybook**: A component-driven development environment.
+- **TailwindCSS**: Utility-first CSS framework for rapid UI development.
+- **Husky & Lint-Staged**: Pre-commit hooks to enforce code quality.
+- **Plop**: Scaffolding tool for generating components and other boilerplate code.
+
+## Installation
+
+Clone the repository and install dependencies:
+
+```sh
+git clone https://github.com/kirksahdo/boilerplate-apps-router.git
+cd boilerplate-apps-router
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Scripts
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Development
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```sh
+npm run dev
+```
 
-## Learn More
+Starts the Next.js development server.
 
-To learn more about Next.js, take a look at the following resources:
+### Build
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```sh
+npm run build
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Builds the application for production.
 
-## Deploy on Vercel
+### Start
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```sh
+npm run start
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Runs the built application in production mode.
+
+### Linting
+
+```sh
+npm run lint
+```
+
+Runs ESLint to check for code issues.
+
+### Testing
+
+```sh
+npm run test
+```
+
+Runs Jest tests.
+
+```sh
+npm run test:watch
+```
+
+Runs tests in watch mode.
+
+```sh
+npm run test:ci
+```
+
+Runs tests in CI mode.
+
+### Storybook
+
+```sh
+npm run storybook
+```
+
+Starts Storybook for component development.
+
+```sh
+npm run build-storybook
+```
+
+Builds the Storybook static site.
+
+### Code Generation
+
+```sh
+npm run generate
+```
+
+Uses Plop to scaffold new components or features.
+
+## License
+
+This project is open-source and available under the MIT License.
